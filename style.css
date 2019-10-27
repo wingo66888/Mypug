@@ -46,6 +46,15 @@ nav{
     text-align: center;
 }
 
+.title-box{
+    text-align:center;
+    color:#58451a;
+}
+.title{
+    font-style: 1.5em;
+    padding: 10px 0;
+}
+
 .title::before{
     content: "~";
     padding-right: 20px;
