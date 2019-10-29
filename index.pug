@@ -1,6 +1,6 @@
 //- mix區塊
 //-產生標題(英文標題,中文標題)
-mixin title(eng,chi)
+mixin title(eng, chi)
     div(class="title-box")
     h2(class="title")=eng
     h1=chi
@@ -23,8 +23,8 @@ html(lang="zh")
     body
         div(id="banner")
             nav
-                img(src="img/logo.png", alt="狸小路 logo" id="logo")
-                div(id="link")
+                img(src="img/logo.png", alt="狸小路 logo" class="logo")
+                div(class="link")
                     a(href="#") 最新消息
                     a(href="#") 產品介紹
                     a(href="#") 聯絡我們
@@ -33,7 +33,7 @@ html(lang="zh")
             p 不加多餘的糖份、油脂，不給不必要的色素裝飾，只有單純原味，與健康分享，不靠防腐香精來增加香氣與保存期限，使甜膩少一點、但保存短一點，讓你吃的無負擔，追求健康多一點。
             img(src="img/brands.png",alt="狸小路 產品")
 
-        +title("CAKE","產品介紹")
+            +title("CAKE","產品介紹")
 
         section(id="product")
             +product-box("cake01","香蕉巧克力蛋糕$280","苦甜巧克力的蛋糕體配上新鮮的香蕉切片，再搭上一些鮮奶油，意想不到的搭配組合出意想不到的口感")
@@ -48,6 +48,18 @@ html(lang="zh")
             +product-box("cake10","檸檬千層$930","新鮮檸檬加上蛋及奶油，好吃天然的檸檬醬內餡，就是這麼簡單的原料，讓您每一口都回味無窮")
             +product-box("cake11","太妃焦糖千層$830","焦糖拌上鮮奶油，煮出來的焦糖醬帶著牛奶糖的味道，微甜的焦糖醬拌著蛋皮，每一口都是回憶")
             +product-box("cake12","香蕉朱古力千層$830","苦甜巧克力拌成的鮮奶油內餡，搭配上香氣十足的新鮮香蕉切片，一口一口讓您停不了口 ")
+        a(href="#" class="btn-big") 觀看產品目錄
+        div(class="small-line")
 
         +title("NEWS","最新消息")
+        a(href="#" class="btn-big") 觀看更多消息
+        
         +title("CONTACT","聯絡我們")
+        footer
+         nav
+                img(src="img/logo.png", alt="狸小路 logo" class="logo")
+                div(class="link")
+                    a(href="#") 最新消息
+                    a(href="#") 產品介紹
+                    a(href="#") 聯絡我們
+                div copyright &copy;2019 狸小路. All rights reserved

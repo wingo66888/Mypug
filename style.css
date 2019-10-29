@@ -4,6 +4,10 @@
     font-family: 微軟正黑體;
 }
 
+body{
+    background-color: #faf7f0;
+    text-align: center;
+}
 #banner{
     background-image: url(img/Banner.jpg);
     background-size: 100vw;
@@ -13,14 +17,14 @@
     /*calc css計算 + - * /  */
     height: calc(100vw/2.5);
 }
-#logo{
+.logo{
     width: 300px;
 }
-#link{
+.link{
     float: right;
     padding: 40px 0;
 }
-#link a{
+.link a{
     color:#fff;
     /*text-decoration文字底線*/
     text-decoration: none;
@@ -30,7 +34,7 @@
     font-weight: 800;
 }
 
-#link a:hover{
+.link a:hover{
     background-color: #ffe048;
     color:black;
     /*transition 動畫效果*/
@@ -47,7 +51,7 @@ nav{
 }
 
 .title-box{
-    text-align:center;
+    text-align: center;
     color:#58451a;
 }
 .title{
@@ -86,6 +90,7 @@ nav{
     padding: 30px;
     width: 920px;
     margin: 0 auto;
+    text-align: left;
 }
 #product img{
     width: 100%;
@@ -102,4 +107,33 @@ nav{
     background-color: #bdac90;
     border:0;
     margin: 20px 0;
+}
+
+/*按鈕效果*/
+/*a杭內元素 不能調寬高*/
+.btn-big{
+    display:inline-block;
+    background-color: #642200;
+    color:#fff;
+    text-decoration: none;
+    padding: 20px 100px;
+    transition: 0.8s;
+}
+
+.btn-big:hover{
+    background-color: transparent;
+    border: 2px solid #642200;
+    color:#642200;
+    font-weight: 900;
+}
+
+.small-line{
+    background-image: url(img/small-line.png);
+    height: 5px;
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: #642200;
 }
